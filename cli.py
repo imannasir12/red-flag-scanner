@@ -25,6 +25,12 @@ def print_results(result):
     else:
         print("No major issues spotted. You can probably keep the conversation going.")
 
+        print("\nWhy this recommendation was made:")
+        for category in result["flags"].keys():
+            print(f"- {category.replace('_', ' ').title()}")
+
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Scan a conversation for common dating red flags"

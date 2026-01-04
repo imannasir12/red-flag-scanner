@@ -112,3 +112,23 @@ CONTROL_OR_DISMISSAL_PHRASES = [
     "i'm done talking about this",
     "end of discussion"
 ]
+
+CATEGORY_WEIGHTS = {
+    "VAGUE_INTENT": 2,
+    "FRIEND_ZONE": 2,
+    "DEFLECTION": 2,
+    "BLAME_SHIFTING": 3,
+    "LACK_OF_ACCOUNTABILITY": 3,
+    "EMOTIONAL_UNAVAILABILITY": 2,
+    "INCONSISTENCY": 3,
+    "GASLIGHTING": 4,
+    "CONTROL_OR_DISMISSAL": 3,
+    "LOW_EFFORT": 1,
+    "NO_QUESTIONS": 1
+}
+
+RED_FLAG_RATIO_CAUTION = 0.15
+RED_FLAG_RATIO_LEAVE = 0.30
+
+ESCALATION_THRESHOLD = 0.5  # % of recent messages with red flags
+
